@@ -1,0 +1,7 @@
+<div class="col-lg-6">
+<input type="text" class="form-control" name="username" [(ngModel)]="username" (input)="onUpdate($event)">
+<p>{{displayName}}</p>
+<button class="btn btn-success" [disabled]="!username" (click)="addUserName()">Add Username</button>
+<button class="btn btn-success" [disabled]="!username" (click)="reset()">Reset</button>
+<p>{{status}}</p>
+</div>
